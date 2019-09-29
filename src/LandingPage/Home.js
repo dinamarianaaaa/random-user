@@ -35,13 +35,14 @@ class Home extends Component {
     render() {
       const {items } = this.state;
         return (
+  
           <div className="boxWhite">
             <h2>Random User</h2>
             {
               items.length > 0 ? items.map(item => {
               const {id, firstName, lastName, age, location, email, thumbnail} = item;
                return (
- 
+                  
                <div key={id} className="bgBox">
                <center><img src={thumbnail} alt={firstName} className="box1"/> </center><br />
                <div className="ctr">

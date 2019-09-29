@@ -5,7 +5,7 @@ import Home from './LandingPage/Home';
 
 function App() {
   return (
-    <div className="scrollmenu">
+    <div className="root">
       <Home />
     </div>
   );
