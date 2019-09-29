@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import './Home.css';
- 
+
 class Home extends Component {
  
   constructor(props) {
@@ -43,7 +43,7 @@ class Home extends Component {
                return (
  
                <div key={id} className="bgBox">
-               <center><img src={thumbnail} alt={firstName} className="box"/> </center><br />
+               <center><img src={thumbnail} alt={firstName} className="box1"/> </center><br />
                <div className="ctr">
                   {firstName} {lastName}<br />
                   {age} <br />

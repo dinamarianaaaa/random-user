@@ -2,6 +2,10 @@ body {
     background-color: #2D3B48;
     padding: 20px;
     margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    white-space: nowrap;
   }
   .title {
     color: white;
@@ -28,6 +32,7 @@ body {
   .content {
     background-color: #FFF;
     padding: 20px;
+    display: flex;
   }
   .content h2 {
     padding: 0;
@@ -41,10 +46,8 @@ body {
     height: 700px;
     background: white;
   }
-  .bgBox {
-    border-radius: 50%;
-    width: 230px;
-    height: 230px;
+  .bgBox, .masonry {
+    width: 350px;
     background-color: #24CED0;
     color: white;
     padding-left: 10px;
@@ -53,18 +56,20 @@ body {
     padding-bottom: 15px;
     margin: 10px;
     float: left;
-    font-size: 13px;
+    font-size: 12px;
   
+  }
+  .masonry { 
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 800px;
+    margin-left: -8px; /* Adjustment for the gutter */
+    width: 100%;
   }
   .box1{
       width: 150px;
       height: 150px;
       background: #24CED0;
-  }
-  .box2{
-      width: 230px;
-      height: 230px;
-      background: #2D3B48;
   }
   .box {
     border-radius: 50%;
